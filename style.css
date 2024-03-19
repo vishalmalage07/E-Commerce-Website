@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Don't Copy My Code Without my permission At least Click on buy me a coffee and donate Money.That's all Thank you */
+*{
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+/* all of  */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+/* for section  */
+section{
+    padding: 2rem 9%;
+}
+
+
+/* for single button  */
+.btn{
+    padding: 1rem 3rem;
+    border: 2px solid #0f0549;
+    color: #0f0549;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 0.54rem;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #e69603;
+    color: #fff;
+}
+
+
+/* for single heading  */
+.heading h3{
+    font-size: 4rem;
+    color: #0f0549;
+    padding: 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading span{
+    color: #e69603;
+    text-transform: uppercase;
+}
+
+
+/* header-section css  start here  */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0.5rem 0 1rem #00003159;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+}
+header .logo a{
+    font-size: 2.5rem;
+    color: #0f0549;
+}
+header .navbar{
+    display: flex;
+}
+header .navbar li a{
+    margin: 0 1.5rem;
+    font-size: 1.7rem;
+    color: #0f0549;
+}
+header .navbar li a:hover{
+    color: #e69603;
+}
+header .icons i{
+    color: #0f0549;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+header .icons i:hover{
+    color: #e69603;
+}
+#menu-bar{
+    padding: 0.5rem 1.6rem;
+    border: 2px solid #0f0549;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+/* header-section css  end here  */
+
+
+/* home-section css  start here  */
+.home{
+    padding: 0;
+    position: relative;
+}
+.home .box-container .slide{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 9rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home .box-container .slide .content{
+    flex: 1 1 40rem;
+    animation: content 0.5s linear 1s backwards;
+}
+@keyframes content {
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }   
+}
+.home .box-container .slide .content span{
+    font-size: 2rem;
+    color: #e69603;
+}
+.home .box-container .slide .content h3{
+    font-size: 5rem;
+    color: #0f0549;
+    margin: 1rem 0;
+}
+.home .box-container .slide .content p{
+    font-size: 1.7rem;
+    color: #777;
+    line-height: 1.7;
+}
+.home .box-container .slide .image{
+    flex: 1 1 50rem;
+    position: relative;
+}
+.home .box-container .slide .image .shoe{
+    width: 100%;
+    transform: rotate(-35deg);
+    padding-bottom: 15rem;
+    animation: shoe 0.5s linear;
+}
+@keyframes shoe {
+    0%{
+        transform: rotate(0) scale(.5);
+    } 
+}
+.home .box-container .slide .image .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: text 0.5s linear 0.5s backwards;
+}
+@keyframes text {
+    0%{
+        opacity: 0;
+        top: -10rem;
+    }
+    
+}
+.home .box-container{
+    display: none;
+}
+.home .box-container.active{
+    display: block;
+}
+
+#prev,#next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    font-size: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    border: 2px solid #0f0549;
+    border-radius: 50%;
+}
+#prev:hover,
+#next:hover{
+    background-color: #e69603;
+    color: white;
+    cursor: pointer;
+}
+#prev{
+    left: 3rem;
+}
+#next{
+    right: 3rem;
+}
+/* home-section css  end here  */
+
+
+/* our-support-section css  start here  */
+
+.our-support{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin: 2rem 9%;
+    border: 1px solid #0000013b;
+    border-radius: 0.5rem;
+}
+
+.our-support .delivery{
+    flex: 1 1 30rem;
+    text-align: center;
+}
+.our-support .delivery i{
+    font-size: 4rem;
+    color: #e69603;
+}
+.our-support .delivery h3{
+    font-size: 2rem;
+    color: #0f0549;
+    padding: 1rem 0;
+}
+
+.our-support .delivery p{
+    font-size: 1.5rem;
+    color: #777;
+}
+/* our-support-section css  end here  */
+
+
+/* latest-product-section css  start here  */
+
+.latest-product{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.latest-product .product{
+    flex: 1 1 30rem;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #0000013b;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.latest-product .product img{
+    height: 10rem;
+    transform: rotate(-35deg);
+    margin: 8rem 2rem;
+}
+
+.latest-product .product:hover img{
+    transform: rotate(-35deg) scale(1.2);
+}
+
+.latest-product .product .icons{
+    position: absolute;
+    top: 1rem;
+    left: -10rem;
+}
+.latest-product .product .icons i{
+    display: block;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border: 1px solid #0f0549;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+}
+
+.latest-product .product:hover .icons{
+    left: 2rem;
+}
+
+.latest-product .product h3{
+    font-size: 2.5rem;
+    color: #0f0549;
+}
+.latest-product .product .prize{
+    font-size: 2rem;
+    color: #0f0549;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.latest-product .product .prize span{
+    font-size: 1.6rem;
+    color: #e69603;
+    text-decoration: line-through;
+}
+.latest-product .product .stars{
+    font-size: 1.7rem;
+    color: #e69603;
+}
+
+/* latest-product-section css  end here  */
+
+
+/* features-product-section css  strt here  */
+
+.features-product{
+    padding: 2rem;
+    border: 1px solid #0000013b;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.features-product .feautres{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.features-product .feautres .img-content{
+    flex: 1 1 40rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.features-product .feautres .small-img{
+    width: 20%;
+}
+.features-product .feautres .big-img{
+    width: 80%;
+}
+.features-product .feautres .small-img img{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #00003159;
+    cursor: pointer;
+}
+.features-product .feautres .small-img img:hover{
+    background-color: #00003159;
+}
+.features-product .feautres .big-img img{
+    width: 100%;
+}
+
+.features-product .feautres .img-details{
+    flex: 1 1 40rem;
+}
+
+.features-product .feautres .img-details h3{
+    font-size: 2.5rem;
+    color: #0f0549;
+}
+.features-product .feautres .img-details .stars{
+    font-size: 1.6rem;
+    color: #e69603;
+    margin: 1rem 0;
+}
+.features-product .feautres .img-details p{
+    font-size: 1.5rem;
+    color: #777;
+    padding-bottom: 1rem;
+}
+.features-product .feautres .img-details .prize{
+    font-size: 2rem;
+    color: #0f0549;
+    font-weight: 700;
+}
+.features-product .feautres .img-details .prize span{
+    font-size: 1.5rem;
+    color: #e69603;
+    text-decoration: line-through;
+}
+
+/* features-product-section css  end here  */
+
+
+/* customer-review-section css  start here  */
+
+.customer-review{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.customer-review .review{
+    flex: 1 1 30rem;
+    padding: 2rem;
+    border: 1px solid #0000013b;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.customer-review .review img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin: 1rem 0;
+}
+.customer-review .review h3{
+    font-size: 2.5rem;
+    color: #0f0549;
+    text-transform: uppercase;
+}
+.customer-review .review p{
+    font-size: 1.6rem;
+    color: #777;
+    margin: 1rem 0;
+}
+.customer-review .review .stars{
+    font-size: 1.6rem;
+    color: #e69603;
+}
+
+/* customer-review-section css  end here  */
+
+
+
+/* newsletter-section css  start here  */
+
+.newsletter{
+    padding: 2rem;
+    margin: 0 auto;
+    border: 1px solid #0000013b;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.newsletter h3{
+    font-size: 3rem;
+    color: #0f0549;
+}
+.newsletter p{
+    font-size: 1.6rem;
+    color: #777;
+    max-width: 60rem;
+    margin: 1rem auto;
+}
+.newsletter form{
+    max-width: 50rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: 2px solid #0f0549;
+}
+.newsletter form input{
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1rem;
+}
+.newsletter form .en-btn{
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    border-left: 2px solid #0f0549;
+    cursor: pointer;
+}
+.newsletter form .en-btn:hover{
+    background-color: #e69603;
+    color: white;
+}
+/* newsletter-section css  end here  */
+
+
+/* footer-section css  start here  */
+
+.footer-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #0000013b;
+}
+.footer-section .footer{
+    flex: 1 1 20rem;
+}
+.footer-section .footer h3{
+    font-size: 2.5rem;
+    color: #0f0549;
+    margin: 1rem 0;
+}
+.footer-section .footer a{
+    display: block;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    color: #777;
+}
+.footer-section .footer a:hover{
+    color: #e69603;
+    padding-left:1rem;
+}
+
+/* footer-section css  end here  */
+
+
+
+
+
+
+#footer-copyright {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* for mini compute or laptop device  */
+@media screen and (max-width: 1024px) {
+    html{
+        font-size: 55.5%;
+    }
+    section{
+        padding: 2rem;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    .our-support{
+        margin: 2rem;
+    }
+    
+}
+
+
+/* for mobile or   */
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 50.5%;
+    }
+
+    #menu-bar{
+        display: block;
+    }
+
+    header .navbar{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: -120%;
+        background-color: #fff;
+        border-top: 1px solid #0000013b;
+    }header .navbar.active{
+        left: 0;
+    }
+
+    header .navbar li a{
+        font-size: 2rem;
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid #0f0549;
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+
+    .home .box-container .slide{
+        padding: 2rem;
+        padding-top: 10rem;
+    }
+
+    .home .box-container .slide .image .text{
+        width: 85%;
+    }
+}
+
+/* for mobile device  */
+@media screen and (max-width: 400px) {
+    html{
+        font-size: 47.5%;
+    } 
+}
+/*please  click on Buy Me a coffee And Buy me Coffee if U buy I Appreciate that/*
