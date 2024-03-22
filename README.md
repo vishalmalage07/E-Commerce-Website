@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Vishal Malage</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
 
-- 👨‍💻 All of my projects are available at [https://github.com/vishalmalage07](https://github.com/vishalmalage07)
+- 👨‍💻 All of my projects are available at [here](https://github.com/vishalmalage07)
 
 - 📫 How to reach me **vishalmalage07@gmail.com**
 
